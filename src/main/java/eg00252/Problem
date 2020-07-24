@@ -1,0 +1,5 @@
+Segregate 0’s and 1’s
+
+Input -> arr[] = { 0, 1, 0, 1, 1, 0, 1 };
+
+Output -> Array after segregation is 0 0 0 1 1 1

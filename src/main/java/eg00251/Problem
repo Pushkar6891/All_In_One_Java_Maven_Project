@@ -1,0 +1,8 @@
+WAP to find maximum water area captured between the buildings after the rain 
+Ex : 
+Input: arr[]   = {2, 0, 2}
+Output: 2
+Explanation: between two buildings of height 2 each water captured is 2 units
+Input: arr[] = {3,0,2,0,4}
+Output: 7
+Explanation: water captured between 3 and 4 height building is 3,1 and 3 units total 7 units.

@@ -1,0 +1,4 @@
+1 www.google.com 30
+2 www.yahoo.com 50
+3 www.twitter.com 70
+4 www.apple.com 100 
