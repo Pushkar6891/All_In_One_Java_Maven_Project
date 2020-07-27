@@ -1,6 +1,5 @@
 package eg00142;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 
 public class FindCommonElementsBetweenArraysDemo {

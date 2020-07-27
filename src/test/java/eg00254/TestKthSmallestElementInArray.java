@@ -18,6 +18,9 @@ import org.mockito.junit.MockitoJUnit;
 
 import org.mockito.junit.MockitoRule;
 
+import eg00197.KthSmallestElementInArray;
+import eg00197.KthSmallestElementInArrayService;
+
 public class TestKthSmallestElementInArray {
 
 	KthSmallestElementInArray kthSmallestElementInArray = null;

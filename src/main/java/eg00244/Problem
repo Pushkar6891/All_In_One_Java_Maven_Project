@@ -1,0 +1,3 @@
+//  Without Recursion remove all adjacent duplicates in a given string.
+//  For e.g.  Input: Mississippi
+//   Output: Misisipi

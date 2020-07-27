@@ -9,10 +9,19 @@ public class RemoveDuplicateElementsFromArrayDemo {
 	public static void main(String[] args) {
 
 		RemoveDuplicateElementsFromArrayDemo obj = new RemoveDuplicateElementsFromArrayDemo();
-		int[] arr = { 9, 8, 2, 6, 3, 9, 6, 4};
-		Integer[] result = obj.findDuplicates(arr);
-		System.out.println(Arrays.toString(arr));
-		System.out.println(Arrays.toString(result));
+		int[] sortedArr = { -2, -2, -1, -1, -1, 0, 0, 0, 1, 2, 2, 3, 3, 3, 4, 4, 4, 4, 5, 5, 5, 5, 5, 6, 6, 7, 8, 9, 10,
+				10 };
+		int[] unsortedArr = { -2, 10, 10, 3, 7, 9, 10, -2 };
+		Integer[] resultSortedArr = obj.findDuplicates(sortedArr);
+		System.out.println("Original Sorted Array : ");
+		System.out.println(Arrays.toString(sortedArr));
+		System.out.println("Unique Elements Sorted Array : ");
+		System.out.println(Arrays.toString(resultSortedArr));
+		Integer[] resultUnsortedArr = obj.findDuplicates(unsortedArr);
+		System.out.println("Original Unsorted Array : ");
+		System.out.println(Arrays.toString(unsortedArr));
+		System.out.println("Unique Elements Unsorted Array : ");
+		System.out.println(Arrays.toString(resultUnsortedArr));
 	}
 
 	public Integer[] findDuplicates(int[] arr) {

@@ -1,0 +1,5 @@
+write a program that returns index of a given pattern wherever occured in the string.
+
+   input:- "abcaabcabbabca" pattern = "abca"
+
+   output:- pattern present at index 0, 4 and 10 

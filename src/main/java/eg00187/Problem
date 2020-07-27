@@ -1,0 +1,12 @@
+Problem
+
+Find Maximum Difference between Two Array Elements 
+such that larger number appears after the smaller number
+
+arr = {2,5,15,6,4}
+Output: 13
+
+arr = {7,9,5,6,13,2}
+Output: 8
+
+https://www.youtube.com/watch?v=58JOZIKWWU8&list=PLUg9hRlm7gxR7e9OgtrsqgN7XEyNTZRPK&index=17

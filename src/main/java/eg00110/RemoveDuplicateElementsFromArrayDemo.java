@@ -9,7 +9,9 @@ public class RemoveDuplicateElementsFromArrayDemo {
 		RemoveDuplicateElementsFromArrayDemo obj = new RemoveDuplicateElementsFromArrayDemo();
 		int[] arr = { 9, 8, 2, 6, 3, 9, 6, 4 };
 		int[] result = obj.removeDuplicates(arr);
+		System.out.println("Original Array : ");
 		System.out.println(Arrays.toString(arr));
+		System.out.println("Unique Elements Array : ");
 		System.out.println(Arrays.toString(result));
 	}
 

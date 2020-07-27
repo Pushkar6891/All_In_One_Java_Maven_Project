@@ -1,0 +1,4 @@
+//  3. Given an unsorted array of nonnegative integers, find a continuous subarray which adds to a given number
+//  For e.g.   Input: arr[] = {1, 4, 0, 0, 3, 10, 5}, sum = 7
+//  Output: Sum found between indexes 1 and 4
+//  Note : Sum of elements between indices 1 and 4 is 4 + 0 + 0 + 3 = 7

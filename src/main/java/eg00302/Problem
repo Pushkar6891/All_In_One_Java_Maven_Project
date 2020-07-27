@@ -1,0 +1,3 @@
+//  4. Reverse a linked list using an iterative program 
+//  For e.g. Input: 1->2->3->4->NULL
+//   Output: 4->3->2->1->NULL
