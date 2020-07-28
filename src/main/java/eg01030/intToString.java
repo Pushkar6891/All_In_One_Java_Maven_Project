@@ -15,6 +15,7 @@ public class intToString {
 		int i = 200;
 		String str = String.valueOf(i);
 		System.out.println(str);
+		// System.out.println(str instanceof String);
 	}
 
 	// 2. Using int i = String.valueOf(String)
@@ -22,6 +23,7 @@ public class intToString {
 		int i = 200;
 		String str = Integer.toString(i);
 		System.out.println(str);
+		// System.out.println(str instanceof String);
 	}
 
 	// 2. Using int i = String.valueOf(String)
@@ -29,6 +31,7 @@ public class intToString {
 		int i = 200;
 		String str = String.format("%d", i);
 		System.out.println(str);
+		// System.out.println(str instanceof String);
 	}
 
 }
