@@ -1,13 +1,13 @@
 package eg00163;
 
-public class FindTheMissingNumber {
+public class FindTheMissingPositiveNumber {
 
 	public static void main(String[] args) {
 
-		FindTheMissingNumber obj = new FindTheMissingNumber();
+		FindTheMissingPositiveNumber obj = new FindTheMissingPositiveNumber();
 //		int[] arr = { 1, 2, 4, 5, 6, 7, 8 };
 		int[] arr = { 1, 2, 3, 4, 6, 7 };
-		// System.out.println(obj.findMissingNumber(arr));
+	   // System.out.println(obj.findMissingNumber(arr));
 		System.out.println(obj.findMissingNumberUsingXOR(arr));
 	}
 
