@@ -8,7 +8,6 @@ public class LinearSearchUsingRecursionDemo {
 
 		int key = 100;
 		int arr[] = { -22, -9, 99, -7, 33, 55, 100, 120, 66, -200, -300 };
-		int n = arr.length;
 		int startIndex = 0;
 		int lastIndex = arr.length;
 		LinearSearchUsingRecursionDemo obj = new LinearSearchUsingRecursionDemo();

@@ -9,8 +9,6 @@ public class HeapSortIterativeApproach {
 
 		HeapSortIterativeApproach obj = new HeapSortIterativeApproach();
 		int[] arr = { -10, 9, 8, -6, 3, 7, -2, -4, 1, 2 };
-		int low = 0;
-		int high = arr.length - 1;
 		System.out.println("Original Unsorted Array : ");
 		System.out.println(Arrays.toString(arr));
 		System.out.println("Resultant Sorted Array : ");

@@ -7,19 +7,28 @@ public class ReverseStringByWordOrReverseIndiviualWordsInString {
 	public static void main(String[] args) {
 		ReverseStringByWordOrReverseIndiviualWordsInString obj = new ReverseStringByWordOrReverseIndiviualWordsInString();
 		String str = "My name is Pushkar Chauhan";
+
 		System.out.println("Original String : ");
 		System.out.println(str);
+
 		String result1 = obj.reverseStringByWord(str);
 		System.out.println("\nReversed String 1 : ");
 		System.out.println(result1.trim());
+
 		System.out.println("\nReversed String 2 : ");
 		String result2 = obj.reverseIndividualWord(str);
 		System.out.println(result2);
+
 		System.out.println("\nReversed String 3 Using StringBuilder word by word: ");
 		String result3 = obj.reverseIndividualWordStringBuilder(str);
 		System.out.println(result3);
+
 		System.out.println("\nReversed String 4 Using Stack: ");
 		obj.reverseIndividualWordStack(str);
+
+		System.out.println("\n\nReversed String 5");
+		String result5 = obj.printReversedStringbyWords(str);
+		System.out.println(result5);
 
 	}
 
@@ -103,6 +112,36 @@ public class ReverseStringByWordOrReverseIndiviualWordsInString {
 		while (!st.isEmpty()) {
 			System.out.print(st.pop());
 		}
+	}
+
+	public String printReversedStringbyWords(String str) {
+		int n = str.length();
+		String finalString = "";
+		String tempString = "";
+
+		// Boundary Checks
+		if (str == null || n == 0 || str.isEmpty()) {
+			System.out.println("Invalid String");
+		}
+
+		// Loop through Array for every char
+		for (int i = 0; i < n; i++) {
+			char ch = str.charAt(i);
+
+			// if space is encountered
+			if (ch == ' ') {
+				finalString = " " + tempString + finalString;
+				tempString = "";
+			}
+			// if no space append characters into tempString
+			else {
+				tempString += ch;
+			}
+		}
+
+		finalString = tempString + finalString;
+		return finalString;
+
 	}
 
 }

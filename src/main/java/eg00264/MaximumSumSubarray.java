@@ -33,11 +33,14 @@ public class MaximumSumSubarray {
 
 		System.out.println("\n2. Maximum Sub Array Sum : ");
 		System.out.println(obj.findMaximumSubArraySumKadanesAlgorithm2(arr));
+
+		System.out.println("\n3. Maximum Sub Array Sum Using Kadane's Algorithm: ");
+		System.out.println(obj.kadanesAlgorithm(arr));
 	}
 
 	public String findMaximumSubArraySumKadanesAlgorithm(int[] arr) {
 		int max_so_far = Integer.MIN_VALUE;
-		int max_ending_here = 0;
+		int max_ending_here = Integer.MIN_VALUE;
 		int n = arr.length;
 		int s = 0;
 		int start = 0;
@@ -74,6 +77,26 @@ public class MaximumSumSubarray {
 			maxSum = Math.max(sum, maxSum);
 		}
 		return maxSum;
+	}
+
+	public int kadanesAlgorithm(int[] arr) {
+		int n = arr.length;
+		int maxSoFar = 0;
+		int maxEndingHere = 0;
+		for (int i = 0; i < n; i++) {
+			maxEndingHere = maxEndingHere + arr[i];
+
+			// ignore negative numbers
+			if (maxEndingHere < 0) {
+				maxEndingHere = 0;
+			}
+
+			// assign maxEndingHere to maxSoFar
+			if (maxSoFar < maxEndingHere) {
+				maxSoFar = maxEndingHere;
+			}
+		}
+		return maxSoFar;
 	}
 
 }

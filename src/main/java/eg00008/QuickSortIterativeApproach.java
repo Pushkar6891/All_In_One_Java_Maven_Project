@@ -19,7 +19,6 @@ public class QuickSortIterativeApproach {
 	}
 
 	public void quickSort(int[] arr, int low, int high) {
-		int n = arr.length;
 		if (low < high) {
 			int loc = partition(arr, low, high);
 			quickSort(arr, low, loc - 1);

@@ -19,7 +19,6 @@ public class MergeSortIterativeApproach {
 	}
 
 	public void mergeSort(int[] arr, int low, int high) {
-		int n = arr.length;
 		if (low < high) {
 			int mid = (low + high) / 2;
 			mergeSort(arr, low, mid);
