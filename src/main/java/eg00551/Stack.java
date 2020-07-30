@@ -4,7 +4,7 @@ public class Stack {
 
 	private int maxSize;
 	private int[] stackArr;
-	private int top;
+	private int top = 0;
 
 	public Stack(int maxSize) {
 		super();
